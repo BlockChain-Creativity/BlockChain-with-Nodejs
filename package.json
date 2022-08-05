@@ -1,0 +1,37 @@
+{
+  "name": "blockchain-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blockchain.js",
+  "scripts": {
+    "start": "concurrently \"npm run node_1\" \"npm run node_2\" \"npm run node_3\" \"npm run node_4\" \"npm run node_5\" \"npm run node_6\"",
+    "test": "node tests/test.js",
+    "node_1": "nodemon app.js 3001 http://localhost:3001",
+    "node_2": "nodemon app.js 3002 http://localhost:3002",
+    "node_3": "nodemon app.js 3003 http://localhost:3003",
+    "node_4": "nodemon app.js 3004 http://localhost:3004",
+    "node_5": "nodemon app.js 3005 http://localhost:3005",
+    "node_6": "nodemon app.js 3006 http://localhost:3006"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnilNITT/BlockChain-Nodejs.git"
+  },
+  "keywords": [],
+  "author": "Anil Patidar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnilNITT/BlockChain-Nodejs/issues"
+  },
+  "homepage": "https://github.com/AnilNITT/BlockChain-Nodejs#readme",
+  "dependencies": {
+    "concurrently": "4.1.2",
+    "express": "4.17.1",
+    "request": "2.88.0",
+    "request-promise": "4.2.4",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.2"
+  }
+}
